@@ -9,7 +9,7 @@ a {
 }
 @font-face {
   font-family: gothamlight;
-  src: url(../css/fonts/Gotham-Light.otf);
+  src: url(../css/fonts/Gotham-Light.otf) format("otf"), url(../css/fonts/Gotham-Light.woff) format("woff");
 }
 @font-face {
   font-family: gothammedium;
@@ -17,7 +17,7 @@ a {
 }
 @font-face {
   font-family: gothambook;
-  src: url(../css/fonts/GothamBook.ttf);
+  src: url(../css/fonts/Gotham-Book.woff) format("woff"), url(../css/fonts/GothamBook.ttf) format("truetype");
 }
 @font-face {
   font-family: oranienbaum;
@@ -48,11 +48,13 @@ a {
   opacity: 0.4;
 }
 header {
-  max-width: 1280px;
-  margin: auto;
+  background-color: #E6E6E6;
 }
 header .container {
+  max-width: 1280px;
+  margin: auto;
   padding: 0px 128px;
+  background-color: white;
 }
 header .container .header-wrap-mobile {
   display: none;
@@ -597,6 +599,7 @@ header .container .header-wrap .header-menu .header-box .active::after {
   }
   .section-slider .container .slider-wrap .slider {
     border-radius: 10px;
+    overflow: hidden;
   }
   .section-slider .container .slider-wrap .slider .box-slider .prev-next {
     width: 13%;
@@ -674,13 +677,30 @@ header .container .header-wrap .header-menu .header-box .active::after {
   width: 71.09%;
   text-align: center;
 }
-.section-indice .container .indice-wrap .indice-left .indice-title-primary {
+.section-indice .container .indice-wrap .indice-left h4 {
   font-family: gothammedium;
+  width: 100%;
+  font-size: 24px;
+  text-align: center;
+  padding: 0px 20px;
+  font-weight: lighter;
 }
 .section-indice .container .indice-wrap .indice-left .indice-box-wrap {
   display: flex;
   flex-wrap: wrap;
   border: 1px solid #D0D3DB;
+}
+.section-indice .container .indice-wrap .indice-left .indice-box-wrap .indice-box h4 {
+  font-weight: 500;
+  color: black;
+  width: 100%;
+  font-size: 24px;
+  text-align: center;
+  padding: 0px 20px;
+  flex: 1;
+  margin: auto;
+  font-family: gothambook;
+  line-height: 25px;
 }
 .section-indice .container .indice-wrap .indice-left .indice-box-wrap .indice-box:nth-child(2) {
   border-left: 1px solid #D0D3DB;
@@ -700,7 +720,6 @@ header .container .header-wrap .header-menu .header-box .active::after {
   width: 50%;
   display: flex;
   flex-direction: column;
-  padding-bottom: 10px;
   min-height: 204px;
 }
 .indice-box:hover {
@@ -723,7 +742,7 @@ header .container .header-wrap .header-menu .header-box .active::after {
   width: 100%;
   background-color: white;
   padding: 0px 35px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   border-radius: 5px;
   cursor: pointer;
   display: inline-block;
@@ -757,17 +776,6 @@ header .container .header-wrap .header-menu .header-box .active::after {
   font-size: 16px;
   text-align: center;
 }
-.indice-title {
-  font-family: gothambook;
-  font-weight: 500;
-  color: black;
-  width: 100%;
-  font-size: 24px;
-  text-align: center;
-  padding: 0px 20px;
-  flex: 1;
-  margin: auto;
-}
 .plus {
   border: 1px solid #D0D3DB;
   border-top: none;
@@ -792,8 +800,13 @@ header .container .header-wrap .header-menu .header-box .active::after {
   text-align: center;
   padding-left: 10px;
 }
-.indice-right .indice-title-primary {
+.indice-right h4 {
   font-family: gothammedium;
+  width: 100%;
+  font-size: 24px;
+  text-align: center;
+  padding: 0px 20px;
+  font-weight: lighter;
 }
 .indice-right .votre-wrap {
   padding: 15px 15px 0px 15px;
@@ -818,8 +831,13 @@ header .container .header-wrap .header-menu .header-box .active::after {
 .indice-right .votre-wrap .votre img:nth-child(2) {
   display: none;
 }
-.indice-right .votre-wrap .indice-title {
+.indice-right .votre-wrap h4 {
   display: none;
+}
+@media screen and (max-width: 1140px) {
+  .section-indice {
+    padding: 0px;
+  }
 }
 @media screen and (max-width: 1023px) {
   .section-indice {
@@ -831,7 +849,7 @@ header .container .header-wrap .header-menu .header-box .active::after {
   .section-indice .container .indice-wrap .indice-left {
     width: 100%;
   }
-  .section-indice .container .indice-wrap .indice-left .indice-title {
+  .section-indice .container .indice-wrap .indice-left h4 {
     font-size: 50px;
   }
   .section-indice .container .indice-wrap .indice-left .indice-text {
@@ -847,10 +865,12 @@ header .container .header-wrap .header-menu .header-box .active::after {
   .section-indice .container .indice-wrap .indice-left .indice-box-wrap .indice-box .indice-count {
     font-size: 30px;
   }
-  .section-indice .container .indice-wrap .indice-left .indice-box-wrap .indice-box .indice-title {
+  .section-indice .container .indice-wrap .indice-left .indice-box-wrap .indice-box h4 {
     font-size: 40px;
     max-width: 100%;
     padding: 0px 40px;
+    line-height: 45px;
+    padding-bottom: 20px;
   }
   .section-indice .container .indice-wrap .indice-left .indice-box-wrap .indice-box:last-child {
     display: none;
@@ -861,6 +881,15 @@ header .container .header-wrap .header-menu .header-box .active::after {
   }
   .section-indice .container .indice-wrap .indice-left .indice-box-wrap .indice-box:nth-child(2) {
     border-left: 0px;
+  }
+  .section-indice .container .indice-wrap .indice-left .plus {
+    padding: 20px 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+  }
+  .section-indice .container .indice-wrap .indice-left .plus i {
+    font-size: 40px;
   }
   .section-indice .container .indice-wrap .indice-right {
     width: 100%;
@@ -894,7 +923,7 @@ header .container .header-wrap .header-menu .header-box .active::after {
   .section-indice .container .indice-wrap .indice-right .votre-wrap .votre img:nth-child(2) {
     display: block;
   }
-  .section-indice .container .indice-wrap .indice-right .votre-wrap .indice-title {
+  .section-indice .container .indice-wrap .indice-right .votre-wrap h4 {
     display: block;
     font-size: 34px;
     color: white;
@@ -919,26 +948,26 @@ header .container .header-wrap .header-menu .header-box .active::after {
   }
 }
 @media screen and (max-width: 767px) {
-  .section-indice .container {
+  .section-indice {
     padding: 0px 30px;
   }
   .section-indice .container .indice-wrap {
     padding: 30px 0px;
   }
-  .section-indice .container .indice-wrap .indice-left .indice-title {
+  .section-indice .container .indice-wrap .indice-left h4 {
     font-size: 26px;
     padding-bottom: 30px;
   }
   .section-indice .container .indice-wrap .indice-left .indice-box-wrap .indice-box .indice-count {
     font-size: 18px;
   }
-  .section-indice .container .indice-wrap .indice-left .indice-box-wrap .indice-box .indice-title {
+  .section-indice .container .indice-wrap .indice-left .indice-box-wrap .indice-box h4 {
     font-size: 24px;
   }
   .section-indice .container .indice-wrap .indice-right .votre-wrap {
     padding-top: 265px;
   }
-  .section-indice .container .indice-wrap .indice-right .votre-wrap .indice-title {
+  .section-indice .container .indice-wrap .indice-right .votre-wrap h4 {
     font-size: 17px;
   }
   .section-indice .container .indice-wrap .indice-right .votre-wrap .votre-item {
@@ -2186,11 +2215,11 @@ header .container .header-wrap .header-menu .header-box .active::after {
   }
 }
 footer {
-  max-width: 1280px;
-  margin: auto;
   background-color: #252424;
 }
 footer .container {
+  max-width: 1280px;
+  margin: auto;
   padding: 0px 128px;
 }
 footer .container .footer-wrap {

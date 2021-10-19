@@ -7,10 +7,30 @@
             .indice-left{
                 width: 71.09%;
                 text-align: center;    
-                .indice-title-primary{
+                h4{
                     font-family: gothammedium;
+                    width: 100%;
+                    font-size: 24px;
+                    text-align: center;
+                    padding: 0px 20px;
+                    font-weight: lighter;
                 }           
                 .indice-box-wrap{
+                    .indice-box{
+                        h4{
+                            font-family: gothambook;
+                            font-weight: 500;
+                            color: black;
+                            width: 100%;
+                            font-size: 24px;
+                            text-align: center;
+                            padding: 0px 20px;
+                            flex: 1;
+                            margin: auto;
+                            font-family: gothambook;
+                            line-height: 25px;
+                        }
+                    }
                     display: flex;
                     flex-wrap: wrap;
                     border: 1px solid #D0D3DB;
@@ -39,8 +59,8 @@
     width: 50%;
     display: flex;
     flex-direction: column;
-    padding-bottom: 10px;
     min-height: 204px;
+    
     &:hover{
         background-color: #13224C;
         .indice-count, .indice-title {
@@ -62,7 +82,7 @@
     width: 100%;
     background-color: white;
     padding: 0px 35px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     border-radius: 5px;
     cursor: pointer;
     display: inline-block;
@@ -96,17 +116,6 @@
     font-size: 16px;
     text-align: center;
 }
-.indice-title{
-    font-family: gothambook;
-    font-weight: 500;
-    color: black;
-    width: 100%;
-    font-size: 24px;
-    text-align: center;
-    padding: 0px 20px;
-    flex: 1;
-    margin: auto;
-}
 .plus{
     border: 1px solid #D0D3DB;
     border-top: none;
@@ -130,8 +139,13 @@
     width: 28.91%;
     text-align: center;
     padding-left: 10px;
-    .indice-title-primary{
+    h4{
         font-family: gothammedium;
+        width: 100%;
+        font-size: 24px;
+        text-align: center;
+        padding: 0px 20px;
+        font-weight: lighter;
     } 
     .votre-wrap{
         padding: 15px 15px 0px 15px;
@@ -155,10 +169,15 @@
                 display: none;
             }
         }
-        .indice-title{
+        h4{
             display: none;
         }
         
+    }
+}
+@media screen and (max-width: 1140px){
+    .section-indice{
+        padding: 0px;
     }
 }
 @media screen and (max-width: 1023px) {
@@ -169,7 +188,7 @@
                 display: block;
                 .indice-left{
                     width: 100%;
-                    .indice-title{
+                    h4{
                         font-size: 50px;
                     }
                     .indice-text{
@@ -183,12 +202,15 @@
                             .indice-count{
                                 font-size: 30px;
                             }
-                            .indice-title{
+                            h4{
                                 font-size: 40px;
                                 max-width: 100%;
                                 padding: 0px 40px;
+                                line-height: 45px;
+                                padding-bottom: 20px;
                             }
                         }
+                        
                         .indice-box:last-child{
                             display: none;
                         }
@@ -200,6 +222,15 @@
                             border-left: 0px;
                         }
                         
+                    }
+                    .plus{
+                        padding: 20px 0px;
+                        border-bottom-left-radius: 10px;
+                        border-bottom-right-radius:10px;
+                        overflow: hidden;
+                        i{
+                            font-size: 40px;
+                        }
                     }
                 }
                 .indice-right{
@@ -232,7 +263,7 @@
                                 display: block;
                             }
                         }
-                        .indice-title{
+                        h4{
                             display: block;
                             font-size: 34px;
                             color: white;
@@ -263,12 +294,12 @@
 }
 @media screen and (max-width: 767px) {
     .section-indice{
+        padding: 0px 30px;
         .container{
-            padding: 0px 30px;
             .indice-wrap{
                 padding: 30px 0px;
                 .indice-left{
-                    .indice-title{
+                    h4{
                         font-size: 26px;
                         padding-bottom: 30px;
                     }
@@ -277,7 +308,7 @@
                             .indice-count{
                                 font-size: 18px;
                             }
-                            .indice-title{
+                            h4{
                                 font-size: 24px;                                
                             }
                         }
@@ -286,7 +317,7 @@
                 .indice-right{
                     .votre-wrap{
                         padding-top: 265px;
-                        .indice-title{
+                        h4{
                             font-size: 17px;
                         }
                         .votre-item{

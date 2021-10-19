@@ -2,7 +2,7 @@
             <div class="container">
                 <div class="indice-wrap">
                     <div class="indice-left">
-                        <h4 class="indice-title indice-title-primary">
+                        <h4>
                             Les services & solution Groupe BPCE
                         </h4>
                         <div class="indice-text">
@@ -16,7 +16,7 @@
                                 <span class="indice-count">
                                     INDICE 1
                                 </span>
-                                <h4 class="indice-title">
+                                <h4>
                                    Le Crédit Etudiant de la Caisse d'Èpargne Le Crédit Etudiant de la
                                 </h4>
                             </a>
@@ -27,7 +27,7 @@
                                 <span class="indice-count">
                                     INDICE 2
                                 </span>
-                                <h4 class="indice-title">
+                                <h4>
                                     Offre Coloc' de la Caisse d'Èpargne 
                                 </h4>
                             </a>
@@ -38,7 +38,7 @@
                                 <span class="indice-count">
                                     INDICE 3
                                 </span>
-                                <h4 class="indice-title">
+                                <h4>
                                     lecoutdelexpat.com pour prépar son installation à l'étranger 
                                 </h4>
                             </a>
@@ -49,7 +49,7 @@
                                 <span class="indice-count">
                                     INDICE 4
                                 </span>
-                                <h4 class="indice-title">
+                                <h4>
                                     Tweetez payez
                                 </h4>
                             </a>
@@ -69,7 +69,7 @@
                             <div class="votre">
                                 <img src="../assets/image/Groupe-111.png" alt="">
                             </div>
-                            <h4 class="indice-title">
+                            <h4>
                                 Obtenez le rapport d'activité
                             </h4>
                             <a href="#" class="votre-item">
