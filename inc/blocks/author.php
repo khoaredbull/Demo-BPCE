@@ -2,7 +2,7 @@
     <div class="container">
         <div class="author-wrap">
             <div class="author-image">
-                <img src="./assets/image/Rectangle-1.jpg" alt="">
+                <img src="../assets/image/Rectangle-1.jpg" alt="">
             </div>
             <h2 class="author-title">
                 jean-pierre montal

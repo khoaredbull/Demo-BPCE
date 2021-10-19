@@ -37,31 +37,28 @@
                         </div>
                     </div>
                     <button class="share-icon">
-                            <ul class="share-social">
-                                <li>
-                                    <a href="#">
-                                        <img src="../assets/image/facebook-hover.png" alt="">
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="#">
-                                        <img src="../assets/image/LINKEDINhover.png" alt="">
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="#">
-                                        <img src="../assets/image/TWITTERhover.png" alt="">
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="#">
-                                        <img src="../assets/image/Objet-dynamique-vectoriel.png" alt="">
-                                    </a>
-                                </li>
-                            </ul>
+                            <div class="share-icon-wrap">
+                                <ul class="share-social">
+                                    <li>
+                                        <a href="#">
+                                            <img src="../assets/image/facebook-hover.png" alt="">
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="#">
+                                            <img src="../assets/image/LINKEDINhover.png" alt="">
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="#">
+                                            <img src="../assets/image/TWITTERhover.png" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                                <img src="../assets/image/Objet-dynamique-vectoriel.png" alt="">
+                            </div>
                     </button>
                 </div>
             </div>
