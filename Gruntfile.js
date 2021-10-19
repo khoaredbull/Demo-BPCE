@@ -10,14 +10,14 @@ module.exports = function(grunt) {
           optimization: 2
         },
         files: {
-          "C:/AppServ/www/demo/assets/css/main.css": "C:/AppServ/www/demo/assets/less/main.less"
+          "C:/AppServ/www/demo-bpce/assets/css/main.css": "C:/AppServ/www/demo-bpce/assets/less/main.less"
        
         }
       }
     },
     watch: {
       styles: {
-        files: ['C:/AppServ/www/demo/assets/less/**/*.less'], // which files to watch
+        files: ['C:/AppServ/www/demo-bpce/assets/less/**/*.less'], // which files to watch
         tasks: ['less'],
         options: {
           nospawn: true

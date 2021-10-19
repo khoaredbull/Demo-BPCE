@@ -5,13 +5,13 @@
                         <h4 class="indice-title indice-title-primary">
                             Les services & solution Groupe BPCE
                         </h4>
-                        <span class="indice-text">
+                        <div class="indice-text">
                             Retrouver ces indices au fil des chapitres du roman
-                        </span>
+                        </div>
                         <div class="indice-box-wrap">
                             <a href="#" class="indice-box">
                                 <div class="indice-img">
-                                    <img src="./assets/image/Calque-63.jpg" alt="">
+                                    <img src="../assets/image/Calque-63.jpg" alt="">
                                 </div>
                                 <span class="indice-count">
                                     INDICE 1
@@ -22,7 +22,7 @@
                             </a>
                             <a href="#" class="indice-box">
                                 <div class="indice-img">
-                                    <img src="./assets/image/Calque-641.jpg" alt="">
+                                    <img src="../assets/image/Calque-641.jpg" alt="">
                                 </div>
                                 <span class="indice-count">
                                     INDICE 2
@@ -33,7 +33,7 @@
                             </a>
                             <a href="#" class="indice-box">
                                 <div class="indice-img">
-                                    <img src="./assets/image/Calque-65.jpg" alt="">
+                                    <img src="../assets/image/Calque-65.jpg" alt="">
                                 </div>
                                 <span class="indice-count">
                                     INDICE 3
@@ -44,7 +44,7 @@
                             </a>
                             <a href="#" class="indice-box">
                                 <div class="indice-img">
-                                    <img src="./assets/image/Calque-66.jpg" alt="">
+                                    <img src="../assets/image/Calque-66.jpg" alt="">
                                 </div>
                                 <span class="indice-count">
                                     INDICE 4
@@ -67,7 +67,7 @@
                         </span>
                         <div class="votre-wrap">
                             <div class="votre">
-                                <img src="./assets/image/Groupe-111.png" alt="">
+                                <img src="../assets/image/Groupe-111.png" alt="">
                             </div>
                             <h4 class="indice-title">
                                 Obtenez le rapport d'activité

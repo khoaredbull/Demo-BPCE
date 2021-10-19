@@ -350,46 +350,41 @@ header .container .header-wrap .header-menu .header-box .active::after {
 }
 .main-content .section-banner .container .banner-wrap .share-icon {
   display: inline;
-  padding: 10px;
+  padding: 0px 8px;
   background-color: white;
-  border-radius: 10px;
+  border-radius: 5px;
   position: absolute;
   right: 40px;
   bottom: 40px;
   z-index: 70;
   border: none;
 }
-.main-content .section-banner .container .banner-wrap .share-icon:hover {
-  background-color: #13224C;
-}
-.main-content .section-banner .container .banner-wrap .share-icon:hover .share-social li:nth-child(1) {
-  padding: 0px 10px;
-}
-.main-content .section-banner .container .banner-wrap .share-icon:hover .share-social li:nth-child(4) {
-  padding: 0px 10px;
-}
 .main-content .section-banner .container .banner-wrap .share-icon:hover .share-social li:nth-child(1),
 .main-content .section-banner .container .banner-wrap .share-icon:hover .share-social li:nth-child(2),
 .main-content .section-banner .container .banner-wrap .share-icon:hover .share-social li:nth-child(3) {
   transition: linear 0.25s;
   display: block;
+  border-right: 1px solid #D0D3DB;
+}
+.main-content .section-banner .container .banner-wrap .share-icon:hover .share-social li:nth-child(4) {
+  padding-left: 10px;
 }
 .main-content .section-banner .container .banner-wrap .share-icon .share-social {
-  border-radius: 5px;
   display: flex;
   align-items: center;
   background-color: white;
 }
 .main-content .section-banner .container .banner-wrap .share-icon .share-social li {
   list-style-type: none;
-  padding: 0px 10px;
+  padding: 8px 10px;
 }
 .main-content .section-banner .container .banner-wrap .share-icon .share-social li:nth-child(1) {
   display: none;
-  padding-left: 0px;
+  padding-left: 10px;
 }
 .main-content .section-banner .container .banner-wrap .share-icon .share-social li:nth-child(4) {
-  padding: 0px;
+  padding-right: 5px;
+  padding-left: 0px;
 }
 .main-content .section-banner .container .banner-wrap .share-icon .share-social li:nth-child(2),
 .main-content .section-banner .container .banner-wrap .share-icon .share-social li:nth-child(3) {
@@ -499,7 +494,7 @@ header .container .header-wrap .header-menu .header-box .active::after {
   font-weight: 400;
 }
 .section-slider .container .slider-wrap .slider .prev-next:hover {
-  background-color: #626AF2;
+  background-color: #13224C;
 }
 .section-slider .container .slider-wrap .slider .prev-next:hover i {
   color: white;
@@ -725,8 +720,9 @@ header .container .header-wrap .header-menu .header-box .active::after {
   font-family: gothamlight;
 }
 .votre-item {
+  width: 100%;
   background-color: white;
-  padding: 0px 30px;
+  padding: 0px 35px;
   margin-bottom: 10px;
   border-radius: 5px;
   cursor: pointer;
@@ -771,11 +767,6 @@ header .container .header-wrap .header-menu .header-box .active::after {
   padding: 0px 20px;
   flex: 1;
   margin: auto;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  display: -webkit-box;
 }
 .plus {
   border: 1px solid #D0D3DB;
@@ -799,22 +790,23 @@ header .container .header-wrap .header-menu .header-box .active::after {
 .indice-right {
   width: 28.91%;
   text-align: center;
-  padding-left: 20px;
+  padding-left: 10px;
 }
 .indice-right .indice-title-primary {
   font-family: gothammedium;
 }
 .indice-right .votre-wrap {
-  padding-top: 20px;
+  padding: 15px 15px 0px 15px;
   background-image: linear-gradient(to top right, #13224C, #99A0B2);
 }
 .indice-right .votre-wrap .votre {
   width: 100%;
-  padding-top: 105.13%;
+  padding-top: 106.13%;
   background-image: url(../image/Groupe-111.png);
   background-size: cover;
   object-fit: cover;
   position: relative;
+  margin-bottom: 23px;
 }
 .indice-right .votre-wrap .votre img {
   width: 100%;
@@ -2202,7 +2194,7 @@ footer .container {
   padding: 0px 128px;
 }
 footer .container .footer-wrap {
-  color: white;
+  color: #D3D3D3;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -2230,7 +2222,7 @@ footer .container .footer-wrap .info .info-company {
   font-family: gothambook;
 }
 footer .container .footer-wrap .wedsite-company {
-  border: 1px solid white;
+  border: 1px solid #484747;
   border-radius: 5px;
   padding: 10px 30px;
   font-size: 14px;
@@ -2249,7 +2241,7 @@ footer .container .footer-wrap .follow .follow-item {
 footer .container .footer-wrap .follow .follow-item li {
   width: 40px;
   height: 40px;
-  border: 1px solid white;
+  border: 1px solid #484747;
   border-radius: 5px;
   list-style: none;
   position: relative;

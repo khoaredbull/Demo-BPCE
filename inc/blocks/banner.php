@@ -40,19 +40,19 @@
                             <ul class="share-social">
                                 <li>
                                     <a href="#">
-                                        <img src="../assets/image/Objet-dynamique-vectoriel4.png" alt="">
+                                        <img src="../assets/image/facebook-hover.png" alt="">
                                     </a>
                                 </li>
                                 
                                 <li>
                                     <a href="#">
-                                        <img src="../assets/image/Objet-dynamique-vectoriel21.png" alt="">
+                                        <img src="../assets/image/LINKEDINhover.png" alt="">
                                     </a>
                                 </li>
                                 
                                 <li>
                                     <a href="#">
-                                        <img src="../assets/image/Objet-dynamique-vectoriel11.png" alt="">
+                                        <img src="../assets/image/TWITTERhover.png" alt="">
                                     </a>
                                 </li>
                                 
