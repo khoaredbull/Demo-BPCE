@@ -1,0 +1,260 @@
+.section-register{
+    max-width: 1024px;
+    margin: 0 auto;
+    .container{
+        .register-wrap{
+            form{
+                font-size: 18px;
+                table{
+                    margin: 0px auto;
+                    border-spacing: 20px;                   
+                    tr{
+                        .td-left{
+                            text-align: right;
+                        }
+                        td{
+                            .radio-flex{
+                                display: flex;
+                                align-items: center;                               
+                                .radio-register{
+                                    display: flex;
+                                    align-items: center;
+                                    padding-right: 60px;
+                                    .radio{
+                                        width: 32px;
+                                        height: 32px;  
+                                        cursor: pointer;   
+                                        position: relative;  
+                                        margin-right: 10px;                 
+                                        &.radio::before{
+                                            content: "";
+                                            width: 32px;
+                                            height: 32px;
+                                            background-color: #D9DBE2;
+                                            position: absolute;
+                                            top: 0px;
+                                            left: 0px;
+                                            display: block;
+                                            border-radius: 50%;
+                                        }
+                                    } 
+                                    .radio[type=radio]:checked::after{
+                                        content: "";
+                                        width: 16px;
+                                        height: 16px;
+                                        background-color: black;
+                                        position: absolute;
+                                        top: 50%;
+                                        left: 50%;
+                                        transform: translate(-50%, -50%);
+                                        border-radius: 50%;
+                                    }             
+                                }
+                                .radio-none{
+                                    padding-right: 0px;
+                                }
+                            }
+                            .input-register{
+                                padding: 20px 0px;
+                                border: none;
+                                outline: none;
+                                background-color: #D9DBE2;
+                                border-radius: 5px;
+                                overflow: hidden;
+                                width: 380px;
+                                padding-left: 15px;
+                                &.input-register::placeholder{
+                                    font-family: gothambook;
+                                    font-size: 40px;
+                                    color: #13224C;
+                                    visibility: hidden;
+                                }
+                                &.adresse::placeholder{
+                                    font-size: 18px;
+                                    color: #8A8B90;
+                                    visibility: visible;
+                                }
+                            }
+                            .adresse-primayry{
+                                display: none;
+                            }
+                            .code{
+                                width: 190px;
+                            }
+                            .register{
+                                background-color: #13224C;
+                                color: white;
+                                font-family: gothammedium;
+                                font-size: 18px;
+                                width: 100%;
+                                max-width: 380px;
+                                padding: 20px 0px;
+                                border: none;
+                                outline: none;
+                                border-radius: 5px;
+                            }
+                        }
+                        .register-note{
+                            text-align: center;
+                            font-size: 14px;
+                            color: #8A8B90;
+                            display: block;
+                            margin-bottom: 50px;
+                            span{
+                                font-family: gothambook;
+                            }
+                        }
+                    }
+                }
+                
+            }
+            
+        }
+    }
+}
+@media screen and (max-width:1023px){
+    .section-register{
+        .container{
+            .register-wrap{
+                padding: 0px 60px;
+                form{
+                    font-size: 40px;
+                    table{      
+                        width: 100%;  
+                        text-align: center;          
+                        tr{
+                            .td-left{
+                                display: none;
+                            }
+                            td{
+                                .radio-flex{
+                                    justify-content: center;                                   
+                                    .radio-register{
+                                        padding-right: 140px;
+                                        .radio{
+                                            width: 40px;
+                                            height: 40px;
+                                            margin-right: 20px;
+                                            &.radio::before{
+                                                width: 40px;
+                                                height: 40px;
+                                                background-color: white;
+                                                border: 0.5px solid grey;
+                                            }
+                                        }
+                                        .radio[type=radio]:checked::after{
+                                            width: 20px;
+                                            height: 20px;
+                                            background-color: #13224C;
+                                        }
+                                    }
+                                    .radio-none{
+                                        padding-right: 0px;
+                                    }
+                                }
+                                .input-register{
+                                    width: 100%;
+                                    max-width: 600px;
+                                    padding: 30px 0px;
+                                    border-radius: 2px;
+                                    background-color: white;
+                                    border: 1px solid grey;
+                                    font-size: 30px;
+                                    font-family: gothambook;
+                                    &.input-register::placeholder{
+                                        visibility: visible;
+                                        padding-left: 20px;
+                                    }
+                                    &.adresse::placeholder{
+                                        font-size: 40px;
+                                        visibility: visible;
+                                    }
+                                }
+                                .adresse-primayry{
+                                    display: table-row;
+                                } 
+                                .adresse-none{
+                                    display: none;
+                                }                             
+                                .register{
+                                    max-width: 600px;
+                                    padding: 30px 0px;
+                                    border-radius: 2px;
+                                    font-size: 32px;
+                                }
+                            }
+                            .register-note{
+                                font-size: 28px;
+                                text-align: left;
+                                padding-left: 20px;
+                                max-width: 600px;
+                                margin: 0px auto;
+                                margin-bottom: 50px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:767px){
+    .section-register{
+        .container{
+            .register-wrap{
+                padding: 0px 30px;
+                form{
+                    font-size: 20px;
+                    table{      
+                        border-spacing: 10px;         
+                        tr{
+                            td{
+                                .radio-flex{                                  
+                                    .radio-register{
+                                        padding-right: 70px;
+                                        .radio{
+                                            width: 20px;
+                                            height: 20px;
+                                            margin-right: 10px;
+                                            &.radio::before{
+                                                width: 20px;
+                                                height: 20px;
+                                            }
+                                        }
+                                        .radio[type=radio]:checked::after{
+                                            width: 10px;
+                                            height: 10px;
+                                        }
+                                    }
+                                }
+                                .input-register{
+                                    max-width: 300px;
+                                    padding: 15px 0px;;
+                                    font-size: 16px;
+                                    &.input-register::placeholder{
+                                        padding-left: 10px;
+                                        font-size: 20px;
+                                    }
+                                    &.adresse::placeholder{
+                                        font-size: 20px;
+                                    }
+                                }                            
+                                .register{
+                                    max-width: 300px;
+                                    padding: 15px 0px;
+                                    font-size: 16px;
+                                }
+                            }
+                            .register-note{
+                                font-size: 14px;
+                                padding-left: 10px;
+                                max-width: 300px;
+                                margin-bottom: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
