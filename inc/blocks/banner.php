@@ -2,7 +2,7 @@
             <div class="container">
                 <div class="banner-wrap">
                     <div class="logo">
-                        <img src="./assets/image/LOGO.png" alt="">
+                        <img src="../assets/image/LOGO.png" alt="">
                     </div>
                     <div class="banner-title">
                         <h1 class="heading">
@@ -14,13 +14,13 @@
                     </div>
                     <div class="box box-1">
                         <div class="box-img">
-                            <img src="./assets/image/Calque-681.jpg" alt="">
+                            <img src="../assets/image/Calque-681.jpg" alt="">
                         </div>
                     </div>
                     <div class="box box-2">
                         <div class="box-img box-img-2">
-                            <img src="./assets/image/Groupe-8.png" alt="">
-                            <img src="./assets/image/cou.png" alt="">
+                            <img src="../assets/image/Groupe-8.png" alt="">
+                            <img src="../assets/image/cou.png" alt="">
                         </div>
                     </div>
                     <div class="banner-text-wrap">
@@ -40,25 +40,25 @@
                             <ul class="share-social">
                                 <li>
                                     <a href="#">
-                                        <img src="./assets/image/Objet-dynamique-vectoriel4.png" alt="">
+                                        <img src="../assets/image/Objet-dynamique-vectoriel4.png" alt="">
                                     </a>
                                 </li>
                                 
                                 <li>
                                     <a href="#">
-                                        <img src="./assets/image/Objet-dynamique-vectoriel21.png" alt="">
+                                        <img src="../assets/image/Objet-dynamique-vectoriel21.png" alt="">
                                     </a>
                                 </li>
                                 
                                 <li>
                                     <a href="#">
-                                        <img src="./assets/image/Objet-dynamique-vectoriel11.png" alt="">
+                                        <img src="../assets/image/Objet-dynamique-vectoriel11.png" alt="">
                                     </a>
                                 </li>
                                 
                                 <li>
                                     <a href="#">
-                                        <img src="./assets/image/Objet-dynamique-vectoriel.png" alt="">
+                                        <img src="../assets/image/Objet-dynamique-vectoriel.png" alt="">
                                     </a>
                                 </li>
                             </ul>

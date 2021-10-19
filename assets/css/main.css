@@ -298,7 +298,7 @@ header .container .header-wrap .header-menu .header-box .active::after {
 }
 .main-content .section-banner .container .banner-wrap .box .box-img {
   padding-top: 97.65%;
-  background-image: url(../image/Calque-681.jpg);
+  background-image: url('../image/Calque-681.jpg');
   background-size: cover;
   object-fit: cover;
   position: relative;
@@ -312,7 +312,7 @@ header .container .header-wrap .header-menu .header-box .active::after {
 }
 .main-content .section-banner .container .banner-wrap .box .box-img-2 {
   padding-top: 79.26%;
-  background-image: url(../image/Groupe-8.png);
+  background-image: url('../image/Groupe-8.png');
 }
 .main-content .section-banner .container .banner-wrap .box .box-img-2 img:nth-child(2) {
   display: none;
@@ -440,7 +440,7 @@ header .container .header-wrap .header-menu .header-box .active::after {
   }
   .main-content .section-banner .container .banner-wrap .box-2 .box-img-2 {
     padding-top: 150%;
-    background-image: url(../image/cou.png);
+    background-image: url('../image/cou.png');
   }
   .main-content .section-banner .container .banner-wrap .box-2 .box-img-2 img:first-child {
     display: none;
